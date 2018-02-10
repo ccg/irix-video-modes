@@ -1,0 +1,7 @@
+#define ACTIVE_LINES  1050
+#define ACTIVE_PIXELS 1400
+#define FPS	      60
+
+#define EXTRA_HBP	80
+
+#include "TweakedBlockSync.vfs"

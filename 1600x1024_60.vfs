@@ -1,0 +1,81 @@
+/*
+** 1600x1024_60.vfs - Flat panel format for MLA
+** Use the MLA's OSD to set 'phase' to 13, and the clock divider to 125.
+*/
+
+General
+{
+    FieldsPerFrame = 1;
+    FramesPerSecond = 60;
+    TotalLinesPerFrame = 1066;
+    TotalPixelsPerLine = 1700;
+    ActiveLinesPerFrame = 1024;
+    ActivePixelsPerLine = 1600;
+    FormatName = "1600x1024_60";
+}
+
+Active Line {
+    HorizontalFrontPorch = 20 pixels;
+    HorizontalSync = 35 pixels;
+    HorizontalBackPorch = 45 pixels;
+}
+
+Field
+{
+    Vertical Sync = 
+    {
+        {
+            Length = 1.0H; 
+            Low = 0.0 usec;
+        }
+        repeat 3
+	{
+            Length = 1.0H; 
+        }
+    }
+
+    Initial Low;
+    Vertical Back Porch =
+    {
+        {
+            Length = 1.0H; 
+            High = HorizontalSync;
+        }
+        repeat 34
+	{
+            Length = 1.0H; 
+            Low = 0.0 usec; 
+            High = HorizontalSync;
+        }
+    }
+
+    Initial High;
+
+    Active =
+    {
+	repeat 1024
+	{
+	    Length = 1.0H; 
+	    Low = 0.0 usec; 
+	    High = HorizontalSync;
+	}
+    }
+
+    Vertical Front Porch =
+    {
+        repeat 3
+	{
+            Length = 1.0H; 
+            Low = 0.0 usec; 
+            High = HorizontalSync;
+        }
+    }
+}
+
+#if 0
+    postprocess
+    {
+	dump edge;
+    }
+#endif
+

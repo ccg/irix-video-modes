@@ -1,0 +1,24 @@
+1600x1024_60.vfo:
+ Total lines per frame:   1066
+ Total pixels per line:   1700
+ Active lines per frame:  1024
+ Active pixels per line:  1600
+ Frames per second:       60
+ Fields per frame:        1
+ Swaps per frame:         1
+ Pixel clock:             108.732 MHz, period = 9.19692 nsec
+ Hardware pixel rounding:  every 1 pixels
+ Line analysis: 
+  Length:                 1700 Pixels, 1 Lines, 15.6348 usec; (line 0)
+  Frequency:              63.96 KHz, period = 15.6348 usec
+ Horizontal Sync:         35 Pixels, 321.892 nsec; (line 39)
+ Horizontal Back Porch:   45 Pixels, 413.862 nsec; (line 39)
+ Horizontal Active:       1600 Pixels, 14.7151 usec; (line 39)
+ Horizontal Front Porch:  20 Pixels, 183.938 nsec; (line 39)
+ Field Information:
+  Field Duration:           1.8122e+06 Pixels, 1066 Lines, 16.6667 msec; (line 0)
+  Vertical Sync:            6800 Pixels, 4 Lines, 62.5391 usec; (line 0)
+  Vertical Sync Pulse:      6835 Pixels, 4.02059 Lines, 62.861 usec; (line 0)
+  Vertical Back Porch:      59500 Pixels, 35 Lines, 547.217 usec; (line 4)
+  Vertical Active:          1.7408e+06 Pixels, 1024 Lines, 16.01 msec; (line 39)
+  Vertical Front Porch:     5100 Pixels, 3 Lines, 46.9043 usec; (line 1063)
